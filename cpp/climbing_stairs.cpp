@@ -11,7 +11,7 @@ Source: Leetcode
 #include <iostream>
 #include <vector>
 
-int distinct_ways_to_climb(int n) {
+int distinct_ways_to_climb_stairs(int n) {
   if (n <= 2)
     return n;
   std::vector<int> arr(n + 1);
@@ -27,10 +27,10 @@ int main() {
   int n;
   std::cout << "Enter the number of steps: ";
   std::cin >> n;
-  int ways = distinct_ways_to_climb(n);
+  int ways = distinct_ways_to_climb_stairs(n);
   std::cout << "Number of distinct ways to climb the staircase: " << ways
             << std::endl;
-  assert(distinct_ways_to_climb(2) == 2);
-  assert(distinct_ways_to_climb(3) == 3);
+  assert(distinct_ways_to_climb_stairs(2) == 2);
+  assert(distinct_ways_to_climb_stairs(3) == 3);
   return EXIT_SUCCESS;
 }
