@@ -10,7 +10,7 @@ Write the code that will take a string and make
 this conversion given a number of rows:
 string convert(string s, int num_rows);
 
-Source: leetcode
+Problem statement source: Leetcode
 */
 
 #include <cassert>
